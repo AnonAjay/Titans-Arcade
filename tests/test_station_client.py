@@ -77,3 +77,24 @@ def test_station_client_pop_next_player():
 
     # Second pop is None (consumed atomically)
     assert client.pop_next_player() is None
+
+
+@pytest.mark.xfail(
+    strict=True,
+    reason="known defect: malformed outbox lines are silently discarded",
+)
+def test_station_client_retains_malformed_outbox_line_for_recovery(tmp_path):
+    """A bad line must remain available for diagnosis instead of disappearing."""
+    outbox = tmp_path / "outbox.jsonl"
+    malformed_line = "{\"event_id\": \"A-P009-1\",\"score\":"
+    outbox.write_text(malformed_line + "\n", encoding="utf-8")
+
+    client = StationNetworkClient(
+        station="A",
+        server_url="http://testserver",
+        outbox_path=outbox,
+    )
+    client._http_request = lambda method, endpoint, data=None: None
+    client._sync_outbox_locked()
+
+    assert outbox.read_text(encoding="utf-8") == malformed_line + "\n"

@@ -1,4 +1,6 @@
 .venv/
+.conda-env/
+.conda-pkgs/
 __pycache__/
 *.pyc
 .env

@@ -6,6 +6,7 @@ from types import SimpleNamespace
 
 from pose_core.capture import OneEuroFilter, PoseTracker
 from pose_core.landmarks import feet_info
+from pose_core.floor_map import FloorMapper
 
 
 def _make_dummy_landmarks(visible_ids: dict[int, tuple[float, float, float]]):
@@ -103,3 +104,31 @@ def test_pose_tracker_smooth_continuous_output():
     assert pf1.floor_x_m is not None
     assert pf1.left_foot_m is not None
     assert pf1.right_foot_m is not None
+
+
+def test_floor_mapper_round_trips_projective_floor_points():
+    """A perspective camera calibration should map floor corners and interior points both ways."""
+    corners = [
+        [82.0, 402.0],
+        [562.0, 410.0],
+        [490.0, 158.0],
+        [164.0, 151.0],
+    ]
+    mapper = FloorMapper(corners, w_m=1.8, h_m=1.8)
+
+    for floor_point in ((0.0, 0.0), (1.8, 0.0), (1.8, 1.8), (0.0, 1.8), (0.9, 0.9)):
+        pixel_point = mapper.to_pixels(*floor_point)
+        round_trip = mapper.to_floor(*pixel_point)
+        assert round_trip == pytest.approx(floor_point, abs=1e-4)
+
+
+@pytest.mark.xfail(
+    strict=True,
+    reason="known defect: collinear calibration corners produce a homography instead of rejection",
+)
+def test_floor_mapper_rejects_collinear_calibration_corners():
+    """A common failed setup (three or more corners in a line) must fail clearly."""
+    collinear_corners = [[50.0, 50.0], [100.0, 100.0], [150.0, 150.0], [200.0, 200.0]]
+
+    with pytest.raises(ValueError, match="Could not compute a homography"):
+        FloorMapper(collinear_corners, w_m=1.8, h_m=1.8)
