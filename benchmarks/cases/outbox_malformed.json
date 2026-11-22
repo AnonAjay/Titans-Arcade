@@ -1,0 +1,7 @@
+{
+  "case_id": "outbox-malformed-json-001",
+  "reviewed": false,
+  "description": "A partially written score event in the station outbox must remain available for recovery.",
+  "input_line": "{\"event_id\": \"A-P009-1\",\"score\":",
+  "expected_remaining_line": "{\"event_id\": \"A-P009-1\",\"score\":"
+}

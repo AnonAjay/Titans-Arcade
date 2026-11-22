@@ -1,0 +1,240 @@
+{
+  "reviewer": "ChatGPT vision audit, single reviewer",
+  "reviewed": false,
+  "rubric": {
+    "aligned": "All six game-joint neighborhoods appear on the corresponding visible body parts in the source/overlay pair.",
+    "uncertain": "Occluded, stylized, cropped, too small, or ambiguous left/right/viewpoint makes correctness visually unverifiable.",
+    "misaligned": "At least one required joint is clearly placed off the corresponding body part."
+  },
+  "poses": [
+    {
+      "pose_id": "t_pose",
+      "image_file": "t_pose.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "double_bicep",
+      "image_file": "double_bicep.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "superman",
+      "image_file": "superman.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "military_salute",
+      "image_file": "military_salute.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "touchdown",
+      "image_file": "touchdown.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "the_dab",
+      "image_file": "the_dab.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "disco_point",
+      "image_file": "disco_point.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "srk_arms_open",
+      "image_file": "srk_arms_open.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "shrug",
+      "image_file": "shrug.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "traffic_stop",
+      "image_file": "traffic_stop.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "zombie_walk",
+      "image_file": "zombie_walk.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "side_bicep",
+      "image_file": "side_bicep.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "statue_of_liberty",
+      "image_file": "statue_of_liberty.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "boxing_guard",
+      "image_file": "boxing_guard.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "hands_behind_head",
+      "image_file": "hands_behind_head.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "peace_sign",
+      "image_file": "peace_sign.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "wall_lean",
+      "image_file": "wall_lean.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "victory_v",
+      "image_file": "victory_v.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "usain_bolt",
+      "image_file": "usain_bolt.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "yoga_tree",
+      "image_file": "yoga_tree.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "yoga_warrior",
+      "image_file": "yoga_warrior.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "sumo_squat",
+      "image_file": "sumo_squat.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "knee_hug",
+      "image_file": "knee_hug.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "michael_jackson",
+      "image_file": "michael_jackson.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "baseball_pitcher",
+      "image_file": "baseball_pitcher.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "kamehameha",
+      "image_file": "kamehameha.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "naruto_clone",
+      "image_file": "naruto_clone.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "gojo_blindfold",
+      "image_file": "gojo_blindfold.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "speed_skater",
+      "image_file": "speed_skater.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "karate_side_kick",
+      "image_file": "karate_side_kick.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "skater_lunge",
+      "image_file": "skater_lunge.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "kung_fu_crane",
+      "image_file": "kung_fu_crane.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "spiderman_crouch",
+      "image_file": "spiderman_crouch.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "crouching_tiger",
+      "image_file": "crouching_tiger.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "breakdance_freeze",
+      "image_file": "breakdance_freeze.jpg",
+      "rating": "uncertain",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    },
+    {
+      "pose_id": "cheerleader",
+      "image_file": "cheerleader.jpg",
+      "rating": "visually_plausible",
+      "notes": "Single-reviewer visual impression from source/MediaPipe overlay; not independently labeled ground truth."
+    }
+  ],
+  "limitation": "Single-reviewer ChatGPT visual plausibility screen of source/overlay pairs; subjective, not independent ground truth or an accuracy estimate. Human review is still required; all judgments remain reviewed=false.",
+  "summary": {
+    "images": 36,
+    "visually_plausible": 23,
+    "uncertain": 13,
+    "obvious_mismatch": 0,
+    "wilson_95_ci": {
+      "visually_plausible": [
+        0.4758,
+        0.7752
+      ]
+    }
+  }
+}

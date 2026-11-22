@@ -1,0 +1,6 @@
+POSE ACCURACY: NOT MEASURED
+Labels file = benchmarks/pose_labels.json
+Images with complete labels = 0 / 36
+Images missing required landmarks = 36
+Reason = independent landmark annotations are absent or incomplete; saved catalog landmarks are MediaPipe outputs and are not accepted as ground truth.
+Required points per pose = 11, 12, 13, 14, 15, 16, 23, 24, 25, 26, 27, 28

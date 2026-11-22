@@ -1,0 +1,9 @@
+{
+  "case_id": "floor-calibration-collinear-001",
+  "reviewed": false,
+  "description": "Four collinear clicks should be rejected as an invalid floor calibration.",
+  "corners_px": [[50.0, 50.0], [100.0, 100.0], [150.0, 150.0], [200.0, 200.0]],
+  "floor_width_m": 1.8,
+  "floor_height_m": 1.8,
+  "expected": "ValueError"
+}

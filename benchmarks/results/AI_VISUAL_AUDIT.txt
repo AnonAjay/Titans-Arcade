@@ -1,0 +1,23 @@
+AI-ASSISTED VISUAL OVERLAY AUDIT
+
+Reviewer = ChatGPT vision in this session; one qualitative reviewer
+Reviewed by user = false
+Inputs = 36 source pose images and MediaPipe landmark overlays
+Rubric = visually plausible / uncertain / obvious mismatch; defined in visual_pose_audit.json
+
+visually plausible = 23 / 36 (95% Wilson CI 47.58%–77.52%)
+uncertain = 13 / 36 (95% Wilson CI 22.48%–52.42%)
+obvious mismatch = 0 / 36 (95% Wilson CI 0%–9.64%)
+
+This is a subjective visual plausibility screen, not independent ground truth,
+not an accuracy estimate. These intervals describe the single-reviewer rating
+proportions only; they do not measure correctness. No
+image-level pass rate should be used without noting that 13 cases were uncertain
+and all judgments remain unreviewed by the user. A separate review found 36/36
+images produced six numeric angles, but BlazerIndexer discards landmark
+visibility before calculating those angles.
+
+Visual comparison sheets = benchmarks/results/pose_visual_sheets/pairs-01.jpg through pairs-09.jpg
+Overlays = benchmarks/results/pose_overlays/<pose_id>.jpg
+Raw landmarks and angles = benchmarks/results/pose_detection_raw.csv
+Per-image judgments = benchmarks/results/visual_pose_audit.json

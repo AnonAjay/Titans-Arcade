@@ -1,0 +1,9 @@
+MEDIAPIPE REFERENCE-IMAGE OUTPUT COVERAGE (NOT ACCURACY)
+Catalog images = 36; model detected = 36; detection yield = 1.0000 (95% Wilson CI 0.9036..1.0000)
+Images with all six game angles = 36; yield = 1.0000 (95% Wilson CI 0.9036..1.0000)
+Caveat = BlazerIndexer currently drops landmark visibility before angle extraction; this output-yield count does not mean joints were visibly supported.
+Visual comparison sheets = benchmarks/results/pose_visual_sheets
+Visual audit labels = reviewed=false; AI visual judgment is not ground truth.
+Pose correctness = NOT MEASURED; no independent reviewed labels are available.
+Raw per-image outputs = benchmarks/results/pose_detection_raw.csv
+Production catalog was not written.

@@ -1,0 +1,7 @@
+Clone source commit: 6db606b8fb507e78d5cfd8192000766eab084d7e
+Environment: titans-arcade-repro-clean, Python 3.12.16, initially created with Python and pip only.
+README requirements step: `python -m pip install -r requirements.txt` succeeded.
+README model step: `python -m tools.get_models` succeeded; the model had already been downloaded into this disposable clone during an earlier check.
+Default pytest command: 66 passed, 28 setup errors because the configured fixed `.pytest_tmp` directory could not be removed on a repeated Windows run.
+Clean temporary-directory retry: `python -m pytest -q -o addopts= --basetemp=.pytest_tmp_clean2` passed (94 passed, 1 warning).
+Scope: this clone tested the committed HEAD; uncommitted benchmark scripts and regression cases were tested in the working tree using `titans-arcade-benchmark`.

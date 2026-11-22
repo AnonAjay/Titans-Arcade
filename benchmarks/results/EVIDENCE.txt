@@ -1,0 +1,62 @@
+ENVIRONMENT
+CPU = AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+GPU/VRAM = not measured
+RAM = not measured
+OS = Windows-11-10.0.26300-SP0
+Python = 3.12.16
+NumPy = 2.4.6
+OpenCV = 5.0.0
+Model = not used; quantization = not applicable
+Git commit = 6db606b8fb507e78d5cfd8192000766eab084d7e
+Date = 2026-11-22T16:12:46.172617+00:00
+
+MEASURED METRICS
+metric = floor_mapping_one_point median 0.024250 ms | baseline = none | n = 30 | spread = median=0.024250 ms, IQR=0.021125..0.032225 ms, min=0.017100 ms, max=0.063400 ms, p95=0.043800 ms | hardware = CPU: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD; OpenCV: 5.0.0; NumPy: 2.4.6; camera: not accessed | script = benchmarks/run_all.py | status = MEASURED
+metric = floor_mapping_one_point warm-up samples (indicative only) median 0.086800 ms | baseline = none | n = 3 | spread = median=0.086800 ms, IQR=0.068700..1.048400 ms, min=0.050600 ms, max=2.010000 ms | hardware = CPU: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD; OpenCV: 5.0.0; NumPy: 2.4.6; camera: not accessed | script = benchmarks/run_all.py | status = MEASURED
+metric = station_a_lava_update_10x10 median 0.189250 ms | baseline = none | n = 30 | spread = median=0.189250 ms, IQR=0.174650..0.197425 ms, min=0.140500 ms, max=0.272600 ms, p95=0.235990 ms | hardware = CPU: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD; OpenCV: 5.0.0; NumPy: 2.4.6; camera: not accessed | script = benchmarks/run_all.py | status = MEASURED
+metric = station_a_lava_update_10x10 warm-up samples (indicative only) median 0.253000 ms | baseline = none | n = 3 | spread = median=0.253000 ms, IQR=0.228750..0.283100 ms, min=0.204500 ms, max=0.313200 ms | hardware = CPU: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD; OpenCV: 5.0.0; NumPy: 2.4.6; camera: not accessed | script = benchmarks/run_all.py | status = MEASURED
+metric = station_b_pose_match_six_joints median 0.051850 ms | baseline = none | n = 30 | spread = median=0.051850 ms, IQR=0.048100..0.064550 ms, min=0.035300 ms, max=0.104900 ms, p95=0.085945 ms | hardware = CPU: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD; OpenCV: 5.0.0; NumPy: 2.4.6; camera: not accessed | script = benchmarks/run_all.py | status = MEASURED
+metric = station_b_pose_match_six_joints warm-up samples (indicative only) median 0.063200 ms | baseline = none | n = 3 | spread = median=0.063200 ms, IQR=0.055900..0.091300 ms, min=0.048600 ms, max=0.119400 ms | hardware = CPU: AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD; OpenCV: 5.0.0; NumPy: 2.4.6; camera: not accessed | script = benchmarks/run_all.py | status = MEASURED
+metric = pytest suite outcomes 95 passed, 0 failed, 2 xfailed, 0 skipped | baseline = none | n = 97 tests | spread = not applicable | hardware = Windows-11-10.0.26300-SP0 | script = pytest.ini | status = MEASURED
+metric = outbox-malformed-json-001 reproduction fail (1 case) | baseline = none | n = 1 case | spread = indicative only | hardware = local filesystem and CPU | script = benchmarks/run_all.py | status = PROVISIONAL
+metric = floor-calibration-collinear-001 reproduction fail (1 case) | baseline = none | n = 1 case | spread = indicative only | hardware = local filesystem and CPU | script = benchmarks/run_all.py | status = PROVISIONAL
+metric = MediaPipe six-angle output yield 36/36 images (1.0000) | baseline = none | n = 36 images | spread = 95% Wilson CI [0.9036, 1.0000] | hardware = local CPU via MediaPipe XNNPACK | script = benchmarks/pose_accuracy.py | status = MEASURED
+metric = ChatGPT visual plausibility ratings 23/36 plausible, 13 uncertain, 0 obvious mismatches | baseline = none | n = 36 images | spread = 95% Wilson CI for plausible-label rate [0.4758, 0.7752]; single reviewer | hardware = multimodal review of local source/overlay sheets | script = benchmarks/pose_accuracy.py | status = PROVISIONAL
+metric = MediaPipe pose correctness | baseline = none | n = 0 independently labeled images | spread = not available | hardware = not applicable | script = benchmarks/pose_accuracy.py | status = SKIPPED_NO_BASELINE
+
+FRESH-CLONE REPRODUCIBILITY
+Clone source commit: 6db606b8fb507e78d5cfd8192000766eab084d7e
+Environment: titans-arcade-repro-clean, Python 3.12.16, initially created with Python and pip only.
+README requirements step: `python -m pip install -r requirements.txt` succeeded.
+README model step: `python -m tools.get_models` succeeded; the model had already been downloaded into this disposable clone during an earlier check.
+Default pytest command: 66 passed, 28 setup errors because the configured fixed `.pytest_tmp` directory could not be removed on a repeated Windows run.
+Clean temporary-directory retry: `python -m pytest -q -o addopts= --basetemp=.pytest_tmp_clean2` passed (94 passed, 1 warning).
+Scope: this clone tested the committed HEAD; uncommitted benchmark scripts and regression cases were tested in the working tree using `titans-arcade-benchmark`.
+
+CLAIMS AUDIT
+- README: '<15 ms latency' and '60 FPS fluidity' — UNTESTABLE here; no camera was accessed and no frame pipeline was measured.
+- README: 'sub-millimeter stability' — UNTESTABLE here; no floor calibration accuracy dataset or physical ground-truth measurements are included.
+- README: 'sub-millisecond REST & SSE backend' — UNTESTABLE from the logic microbenchmarks; the suite exercises endpoints functionally but does not measure a running server under load.
+- README: '60 FPS real-time big-screen leaderboard', 30 FPS vision loop, and 60 FPS game loop — UNTESTABLE; no live capture or renderer was measured.
+- README: 'Zero cloud latency' and '100% offline edge vision' — the latency phrase is not a measurement; no runtime network audit was run.
+- README: '1st Place Winner' — untestable from repository evidence; event records are not present.
+- README: '36 ... poses' — SUPPORTED as 36 catalog entries in data/poses_index.json; this does not measure matching accuracy.
+
+NOT MEASURED
+- Webcam capture/inference/render latency, FPS, CPU/GPU utilization: camera was not accessed; no reviewed frame/clip dataset is supplied.
+- MediaPipe reference-pose correctness: NOT MEASURED; the catalog's saved landmarks/angles come from MediaPipe and no independent annotations exist. See benchmarks/pose_accuracy.py and benchmarks/results/POSE_ACCURACY.txt.
+- Landmark visibility reliability: NOT MEASURED; BlazerIndexer discards visibility values before extracting catalog angles, so numeric output yield is not a visibility or correctness score.
+- CI: no CI configuration file or workflow was found in this repository.
+- Coverage: not measured (pytest-cov is not pinned in requirements.txt).
+- Process cold-start time, full-process memory, REST concurrency, and hardware round-trip latency: not measured by this logic microbenchmark. Three function warm-ups per path are logged separately.
+
+LIMITATIONS
+- Single Windows machine; CPU logic and OpenCV homography timings are local microbenchmarks, not end-to-end station latency.
+- Benchmark inputs are author-written deterministic fixtures; reviewed=false, so any correctness interpretation is PROVISIONAL.
+- No A/B optimization or baseline comparison was run; baseline = none.
+- The malformed-outbox and collinear-floor cases expose observed failure paths using author-written inputs; both are unreviewed.
+
+TOP 5 RESULTS WORTH PUTTING ON A RESUME
+- No results selected: the timings have no comparison baseline and only n=30 samples per path on one local machine.
+
+Artifacts: raw samples=benchmarks/results/raw/samples-20261122T161225Z.csv; pytest=benchmarks/results/pytest.txt; failure case=benchmarks/results/failure-case.json; fresh clone=benchmarks/results/fresh-clone.txt.

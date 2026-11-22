@@ -1,0 +1,56 @@
+{
+  "cases": [
+    {
+      "case_id": "outbox-malformed-json-001",
+      "reviewed": false,
+      "input_line": "{\"event_id\": \"A-P009-1\",\"score\":",
+      "expected_remaining_line": "{\"event_id\": \"A-P009-1\",\"score\":",
+      "actual_outbox": "",
+      "passed": false
+    },
+    {
+      "case_id": "floor-calibration-collinear-001",
+      "reviewed": false,
+      "input_corners_px": [
+        [
+          50.0,
+          50.0
+        ],
+        [
+          100.0,
+          100.0
+        ],
+        [
+          150.0,
+          150.0
+        ],
+        [
+          200.0,
+          200.0
+        ]
+      ],
+      "expected": "ValueError",
+      "observed": {
+        "accepted": true,
+        "homography": [
+          [
+            -0.012727921724183074,
+            0.012727921724183069,
+            4.440892098500626e-16
+          ],
+          [
+            3.644204524360288e-19,
+            3.644204524360288e-19,
+            -6.481661568437742e-17
+          ],
+          [
+            4.049116245443047e-19,
+            4.049116245443047e-19,
+            -1.0122790613607617e-16
+          ]
+        ]
+      },
+      "passed": false
+    }
+  ]
+}

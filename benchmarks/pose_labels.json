@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "reviewed": false,
+  "coordinate_convention": "Normalized source-image x,y in [0,1]. Keys are MediaPipe landmark indices; annotate independently of the saved catalog landmarks.",
+  "required_point_ids": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "poses": [
+    {
+      "pose_id": "t_pose",
+      "image_file": "t_pose.jpg",
+      "image_sha256": "21aa6ea81799af334c9cdc1ca5738a94513239d8f1900a83ec270b445d9290e7",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "double_bicep",
+      "image_file": "double_bicep.jpg",
+      "image_sha256": "700913834d93353146212b21df9329954da68fbf2e46da5b00cf1a15d51ec761",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "superman",
+      "image_file": "superman.jpg",
+      "image_sha256": "75bcbdeb48f8cc59ed6276a203401d0070143561f60d7e34178fdde2b4bdbc0c",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "military_salute",
+      "image_file": "military_salute.jpg",
+      "image_sha256": "7c38c408ece9050fec50792432b9a8b6b667c02ae4b33901423a8894389dd978",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "touchdown",
+      "image_file": "touchdown.jpg",
+      "image_sha256": "736528c38205172267a17b45f7cfb1e756882996fd0f5691b3c856b19d8fb01d",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "the_dab",
+      "image_file": "the_dab.jpg",
+      "image_sha256": "ccb6b545018fff9c432157140788bd7b4198016a2cf36ff4c429ed4c2d594604",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "disco_point",
+      "image_file": "disco_point.jpg",
+      "image_sha256": "e687cd52d119949f8ff651f61e5ddd44ba21a6d9fda8fb52ebcdf984ac947674",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "srk_arms_open",
+      "image_file": "srk_arms_open.jpg",
+      "image_sha256": "ed2c9ac4b26686d9a747536490ea97f04c7961ddf46feb9c90cfe310e2ecdb17",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "shrug",
+      "image_file": "shrug.jpg",
+      "image_sha256": "fdc2def535b027d02b481336e5102241582ad769fa56ac828148e6fd74f36402",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "traffic_stop",
+      "image_file": "traffic_stop.jpg",
+      "image_sha256": "8686f72044ed17d6fd3d58e0ba6049e2c4643c42d72ee993b0975263ea1ab9de",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "zombie_walk",
+      "image_file": "zombie_walk.jpg",
+      "image_sha256": "02639d6d71b44761da078447fedfb5ff7f79200ffbe36f3cf4ce18b6c0ab5215",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "side_bicep",
+      "image_file": "side_bicep.jpg",
+      "image_sha256": "08f7365f92370ef82dfe4b6f545d0e472dcea7ede0ec849b3b1becef4a25714a",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "statue_of_liberty",
+      "image_file": "statue_of_liberty.jpg",
+      "image_sha256": "ec360a396a8300cae209f70c99ab47e40266b80a07ba0cc93838f349e3448418",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "boxing_guard",
+      "image_file": "boxing_guard.jpg",
+      "image_sha256": "1578d1416d0c3767166e0d35c32cd75919fc89fa9f10c09bdb22ca9f99f8baf5",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "hands_behind_head",
+      "image_file": "hands_behind_head.jpg",
+      "image_sha256": "6367f0195e2cb6de9fc4500e0e1924b3dc5f0b4b7d8755124cdf3275afd12d1a",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "peace_sign",
+      "image_file": "peace_sign.jpg",
+      "image_sha256": "e37c2c2a21fed04cd94d35127db9480a3e7f5d3c5a1ecaf4da560cf6bf681dac",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "wall_lean",
+      "image_file": "wall_lean.jpg",
+      "image_sha256": "ad73535e7c539dc5269d06a97eed065dc521462941af76c42c8414632fc9299d",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "victory_v",
+      "image_file": "victory_v.jpg",
+      "image_sha256": "74020272f438f312f85f971798793fbc9338fcc30bfc80d697098a74e65cfebf",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "usain_bolt",
+      "image_file": "usain_bolt.jpg",
+      "image_sha256": "163b74d5fd370633f7c6c7b8d1dbf1c3cc33698ae40b17edc12cca01bc35154a",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "yoga_tree",
+      "image_file": "yoga_tree.jpg",
+      "image_sha256": "879bd29ca2a60629c3bf5052568be5d32fd89321b873e5fcad68dbc93ac82938",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "yoga_warrior",
+      "image_file": "yoga_warrior.jpg",
+      "image_sha256": "45f9f140722feafabb5d20f59dfeebc219b8c59915c3da138b261350c354b288",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "sumo_squat",
+      "image_file": "sumo_squat.jpg",
+      "image_sha256": "5e05cdc9e2cfd6a22476efe6877397a30249f9bd7460ab4df106e0340c732ad4",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "knee_hug",
+      "image_file": "knee_hug.jpg",
+      "image_sha256": "65dea3caf1cc5df07ee311c39f2dd9b5e6d9f77cce57094c8cb25c0875aaa78d",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "michael_jackson",
+      "image_file": "michael_jackson.jpg",
+      "image_sha256": "cb2cc093d590a491458a1ddf2b40459cf6ac83eb9d1d355eba4fa2508ce9aa83",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "baseball_pitcher",
+      "image_file": "baseball_pitcher.jpg",
+      "image_sha256": "11742ad3dafc3ef67b65c0225bfe6a0d69ac8f69cf8bdc7e776d9858a0b021a4",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "kamehameha",
+      "image_file": "kamehameha.jpg",
+      "image_sha256": "b996a689b1585ade8e7b6a4f970c3ff3ca12643723fbf3f111210bd5c8f646eb",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "naruto_clone",
+      "image_file": "naruto_clone.jpg",
+      "image_sha256": "a758292b0d757889d8c8a2f807f2b0ba2886570ea694ec0fc36361114d07bede",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "gojo_blindfold",
+      "image_file": "gojo_blindfold.jpg",
+      "image_sha256": "5031543dd5d46cddbe6df67792b446f45a194b0fb15ff079c2c5fdcd4eaaa463",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "speed_skater",
+      "image_file": "speed_skater.jpg",
+      "image_sha256": "6d3ff14b22896a9d440739bbdf9141aa45e4d5980f1d350b534ad60387431415",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "karate_side_kick",
+      "image_file": "karate_side_kick.jpg",
+      "image_sha256": "d1c0800ccb220433928844d4356a0554f3aff7bf47478993eb3038ca4698ccd0",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "skater_lunge",
+      "image_file": "skater_lunge.jpg",
+      "image_sha256": "5451b40909e3f5733dd54ba55ae9c4c4790fc28d52f798d88d242fb45dd7ee37",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "kung_fu_crane",
+      "image_file": "kung_fu_crane.jpg",
+      "image_sha256": "269b2f8bf033e7c2dfc7b8122f029330f6df7ea24bda352c9735b78b82c4cca2",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "spiderman_crouch",
+      "image_file": "spiderman_crouch.jpg",
+      "image_sha256": "de3e7d565d7fbdff793eba6ac2d2d8dac87ac42ae4c4fb1a61621d0f7813ec3d",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "crouching_tiger",
+      "image_file": "crouching_tiger.jpg",
+      "image_sha256": "19dc9d3d8960f261ea412f19271ea551fa18e1943382f1930e486d991484fdf6",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "breakdance_freeze",
+      "image_file": "breakdance_freeze.jpg",
+      "image_sha256": "eccdb10b2723fa2914d334fa8f1282c95d405ec7628ef3e46be5e053299bb13f",
+      "reviewed": false,
+      "points_norm": {}
+    },
+    {
+      "pose_id": "cheerleader",
+      "image_file": "cheerleader.jpg",
+      "image_sha256": "99a7c4027c8e4ee087c9b202254ef7827759fa0fbd903d1477bf11a3bccc54d6",
+      "reviewed": false,
+      "points_norm": {}
+    }
+  ]
+}
